@@ -1,0 +1,140 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.expandUp {
+  animation-name: expandUp;
+  -webkit-animation-name: expandUp;
+  animation-duration: 0.7s;
+  -webkit-animation-duration: 0.7s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important;
+}
+
+@keyframes expandUp {
+  0% {
+    transform: translateY(100%) scale(0.6) scaleY(0.5);
+  }
+  60% {
+    transform: translateY(-7%) scaleY(1.12);
+  }
+  75% {
+    transform: translateY(3%);
+  }
+  100% {
+    transform: translateY(0%) scale(1) scaleY(1);
+  }
+}
+
+@-webkit-keyframes expandUp {
+  0% {
+    -webkit-transform: translateY(100%) scale(0.6) scaleY(0.5);
+  }
+  60% {
+    -webkit-transform: translateY(-7%) scaleY(1.12);
+  }
+  75% {
+    -webkit-transform: translateY(3%);
+  }
+  100% {
+    -webkit-transform: translateY(0%) scale(1) scaleY(1);
+  }
+}
+
+body {
+  margin: 100px;
+  font-family: helvetica, sans-serif;
+  background: #000000 url("http://oi64.tinypic.com/i3zbs7.jpg");
+  -webkit-tap-highlight-color: rgba( 0, 0, 0, 0);
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all .4s;
+}
+
+.container {
+  width: 360px;
+  margin: 0 auto;
+}
+
+
+/*------ the HEAD ------*/
+
+.head {
+  overflow: auto;
+  padding: 20px 40px;
+  background: #fff;
+  font-size: 1.2em;
+  color: gray;
+}
+
+.head:before {
+  content: "";
+  display: block;
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  background: url("https://www.brainpickings.org/wp-content/uploads/2014/03/georgelucas.jpg") no-repeat;
+  background-size: 80px;
+}
+
+.head h1 {
+  margin: 15px 0 5px;
+  font-weight: 100;
+  font-size: 2.2em;
+  color: gray;
+}
+
+
+/* --- FOOT --- */
+
+.foot {
+  /*height: 100px;*/
+}
+
+[class^="footItem"] {
+  display: inline-block;
+  width: 33.333333%;
+  padding: 15px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, .8);
+  font-size: 1.1em;
+}
+
+[class^="footItem"] i {
+  display: block;
+  font-size: 1.6em;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.footItem1,
+.footItem2,
+.footItem3 {
+  background-color: #447076;
+}
+
+.footItem1 {
+  border-radius: 0 0 0 5px;
+  border-right: 0.5px solid #3D646A;
+}
+
+.footItem3 {
+  border-radius: 0 0 5px 0;
+  border-left: 0.5px solid #3D646A;
+}
+
+.footItem1:hover,
+.footItem2:hover,
+.footItem3:hover {
+  background: #7C9A9F;
+}
