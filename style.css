@@ -83,7 +83,8 @@ a {
   width: 80px;
   height: 80px;
   margin-right: 20px;
-  background: url("https://www.brainpickings.org/wp-content/uploads/2014/03/georgelucas.jpg") no-repeat;
+/*   background: url("https://www.brainpickings.org/wp-content/uploads/2014/03/georgelucas.jpg") no-repeat; */
+  background-image: url("profil.jpeg") no-repeat;
   background-size: 80px;
 }
 
